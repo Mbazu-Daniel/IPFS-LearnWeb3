@@ -4,6 +4,7 @@ require("dotenv").config({ path: ".env" }); // This gets the environment variabl
 const ALCHEMY_API_KEY_URL = process.env.ALCHEMY_API_KEY_URL;
 const MUMBAI_PRIVATE_KEY = process.env.MUMBAI_PRIVATE_KEY;
 
+
 module.exports = {
   solidity: "0.8.4",
   networks: {
@@ -12,4 +13,5 @@ module.exports = {
       accounts: [MUMBAI_PRIVATE_KEY],
     },
   },
+
 };
